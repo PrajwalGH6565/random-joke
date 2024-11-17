@@ -1,0 +1,118 @@
+/* Basic reset */
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling the container */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8;
+  font-family: Arial, sans-serif;
+  padding: 10px; /* For smaller screens, prevent overflow */
+}
+
+.container {
+  text-align: center;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Allow container to scale down */
+}
+
+h1 {
+  font-size: 1.8em;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* Styling the category selector */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+select {
+  padding: 8px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  width: 100%;
+}
+
+/* Styling the joke display */
+.joke-display {
+  font-size: 1.2em;
+  color: #555555;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  min-height: 60px;
+}
+
+/* Styling the button */
+.button {
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
+      max-width: 90%;
+      padding: 15px;
+  }
+
+  h1 {
+      font-size: 1.6em;
+  }
+
+  .joke-display {
+      font-size: 1.1em;
+      padding: 15px;
+  }
+
+  .button {
+      padding: 8px 16px;
+      font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.4em;
+  }
+
+  .joke-display {
+      font-size: 1em;
+      padding: 12px;
+  }
+
+  .button {
+      padding: 6px 14px;
+      font-size: 0.8em;
+  }
+}
